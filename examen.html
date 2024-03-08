@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>
+		Геометрический умножатель
+		</title>
+		<meta charset="utf-8"> 
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+	</head>
+	
+	<body>
+		<div class="box-gradient2">
+			<a class="btn2" href="index.html">Заставка</a>
+			<a class="btn2" href="learn.html">Обучение</a>
+			<a class="btn2" href="train.html">Тренировка</a> 
+			<a class="btn2" href="examen.html">Экзамен</a> 
+		</div>	
+		
+		<div class="CanvasContainer">
+			<canvas id="myCanvas" width="600" height="800">
+				Ваш браузер не поддерживает Canvas
+			</canvas>
+			<script src='examen.js'></script>				
+		</div>	
+	
+		<div class="ExamenContainer">
+			<button id="random_x" onclick="random_x1_x2()">умножьте</button>			
+			<select id="combo1" onchange="combo_ch()">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+			</select>
+			<div id="nx">X</div>
+			<select id="combo2" onchange="combo_ch()">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+			</select>
+			<div class="ExamenText">Введите ответ:</div>
+			<input id="answer"/>
+			<button id="test" onclick="test()">проверьте</button>
+			<img id="smile" src='sm1.png'>
+		</div>
+    </body>
+</html>
